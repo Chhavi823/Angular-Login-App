@@ -1,0 +1,19 @@
+<div>
+    <h2>Call History</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Callee Name</th>
+                <th>Date/Time</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let call of callHistory">
+                <td>{{ call.callee }}</td>
+                <td>{{ call.dateTime }}</td>
+                <td>{{ call.duration }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

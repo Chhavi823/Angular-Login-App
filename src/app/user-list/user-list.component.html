@@ -1,0 +1,13 @@
+<div class="user-list">
+    <h2>User List</h2>
+    <ul>
+        <li *ngFor="let user of users">
+            <strong>Name:</strong> {{ user.name }} <br>
+            <strong>Phone:</strong> {{ user.phone }} <br>
+            <strong>Email:</strong> {{ user.email }} <br>
+            <button [routerLink]="['/calling-history']" routerLinkActive="active">Call History</button>
+            <br><br><br>
+        </li>
+        <br><br>
+    </ul>
+</div>
